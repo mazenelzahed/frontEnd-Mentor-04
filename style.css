@@ -1,0 +1,82 @@
+/*! ***** Imports  ******/
+@font-face {
+    font-family: 'Outfit';
+    src: url(./Fonts/Outfit-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url(./Fonts/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+/*! ***** Reset ******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+/*! ***** Global ******/
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+}
+main {
+    font-size: 15px;
+    font-family: 'Outfit';
+    background-color: var(--Slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*! ***** Body ******/
+.card {
+    width: 90%;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    -webkit-border-radius: 15px;
+    text-align: center;
+}
+.img{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+.img img{
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+h1{
+    max-width: 90%;
+    margin: auto;
+    font-weight: 700;
+    font-size: 25px;
+    padding: .5em 0;
+    color: var(--Slate-900);
+}
+p{
+    color: var(--Slate-500);
+    max-width: 90%;
+    margin: auto;
+    font-size: 18px;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+/*! ***** Media ******/
+@media screen and (min-width : 600px) {
+    .card {
+        width: 25%;
+        border-radius: 20px;
+    }
+    
+}
